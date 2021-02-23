@@ -1,2 +1,2 @@
-# fixthelobbies
-Fix the Dota 2 Arcade lobbies!
+# fixthelobbies.github.io
+Fix custom game lobbies!
