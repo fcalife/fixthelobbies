@@ -53,14 +53,16 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 </div>
 <div class="Container ComplainContainer">
 <div class="Inner">
-<h2>FIX FREQUENT PLAYER DISCONNECTS</h2>
+<h2>ISSUE #2: hour-long ban for failing to ready up for a custom game</h2>
 <div>
 <video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_disconnects_preview.png">
 <source type="video/webm" src="/fixthelobbies/images/reason_disconnects.webm">
 <source type="video/mp4" src="/fixthelobbies/images/reason_disconnects.mp4">
 </video>
 </div>
-<p>For <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7ehmdt/how_can_it_still_be_after_literally_years_that/">years</a>, custom games have been plagued with predictable and widespread disconnecting in the beginning phase of games. This problem affects most games, including Valve custom games, Overthrow and 10v10. This problem is usually fixed by reconnecting after a disconnect. The problem is entirely on Valve’s end, and unfortunately we cannot do anything about it from the standpoint as a custom game developer.</p>
+<p><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.</p>
+<p>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.</p>
+<p><b>Suggested solution:</b> Make the 30 game requirement opt-in instead of mandatory, on a custom game basis, by making it an option in the game’s addon settings (addoninfo.txt file). That way, games which are not under bot attack can be enjoyed by new players, and those which are can enable the 30-game bot protection as needed.</p>
 </div>
 </div>
 <div class="Container ComplainContainer">
