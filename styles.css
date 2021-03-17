@@ -20,5 +20,5 @@ body,html{width:100%;font-family:arial,helvetica,sans-serif}a,a:active,a:focus,a
 
 .IntroductionContainer{background-image:url(/fixthelobbies/images/background_introduction.jpg);background-size:cover;background-position:50%;background-repeat:no-repeat;overflow:hidden}.IntroductionContainer h2{margin-top:2.5rem;margin-bottom:.2rem;font-family:Radiance;font-size:2.8rem;letter-spacing:3px;display:block;font-weight:400;text-transform:uppercase;color:#f60;background-image:-webkit-linear-gradient(left,#f60,#ed3b1c);color:transparent;-webkit-background-clip:text;background-clip:text}@media (max-width:576px){.IntroductionContainer h2{text-align:center;font-size:8vw}}.IntroductionContainer p{display:block;font-size:24px;color:#999;line-height:40px;padding:0 1rem;margin-bottom:2rem}
 
-.Credits {margin-bottom:3rem}
+.Credits{margin-bottom:3rem;text-align:center}
 /*# sourceMappingURL=styles.css.map */
