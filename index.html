@@ -59,78 +59,54 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <source type="video/mp4" src="/fixthelobbies/images/reason_disconnects.mp4">
 </video>
 </div>
-<p><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.<br><br>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.<br><br><b>Suggested solution:</b> Make the 30 game requirement opt-in instead of mandatory, on a custom game basis, by making it an option in the game’s addon settings (addoninfo.txt file). That way, games which are not under bot attack can be enjoyed by new players, and those which are can enable the 30-game bot protection as needed.</p>
+<p><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.<br><br>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.<br><br><b>Suggested solution:</b> Do not punish players for not clicking the accept button if:<br>a) It is a single player lobby,<br>b) The lobby does not have full players, or<br>c) The entire lobby is filled by a single party.<br><br>Also, scale the punishment: start with a 5 minute penalty, then increase it to 10 minutes, 30, 60, etc. The Arcade ban should also not affect regular Dota: failing to load a custom game should NOT ban you from matchmaking or from playing with bots, for example.</p>
 </div>
 </div>
 <div class="Container ComplainContainer">
 <div class="Inner">
-<h2>REVAMP ARCADE LAYOUT</h2>
+<h2>ISSUE #3: kicked players can rejoin lobbies instantly</h2>
 <div>
 <video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_overview_preview.png">
 <source type="video/webm" src="/fixthelobbies/images/reason_overview.webm">
 <source type="video/mp4" src="/fixthelobbies/images/reason_overview.mp4">
 </video>
 </div>
-<p>Replace the top 10 view list with a list of all lobbies, grouping lobbies and ranking lobbies by the amount of lobbies, remove workshop vote and fix the <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/7lpdq7/suggestions_to_improve_open_lobbies_widget/">problem</a> where players end up in solo lobbies when clicking play. A ping should be shown next to grouped lobbies to indicate the ping of the best lobby for the player in that group. Pressing the Play button on grouped lobbies should join the best lobby for the player. A “Local Lobbies” window should show custom games that only have one lobby and are in the same region as a player, this will allow newer custom games to be able to find players. Local lobbies should be ranked by age of lobby.</p>
+<p><b>Problem:</b> Players who are kicked from lobbies can instantly rejoin them. This is exploited by bots and griefers to rejoin faster than anyone can kick them out.<br><br><b>Suggested solution:</b> Make it so players cannot rejoin a lobby they have been kicked from either for the duration of the lobby, or for 5 minutes. Also, to avoid bots quickly joining and leaving a lobby in order to avoid being kicked from it, add a small cooldown (5 seconds would be enough) to a player’s ability to enter or leave a lobby (i.e. can’t rejoin if you just left).</p>
 </div>
 </div>
 <div class="Container ComplainContainer">
 <div class="Inner">
-<h2>IMPROVE DEBUGGING TOOLS</h2>
+<h2>ISSUE #4: games auto-start when the last player joins</h2>
 <div>
 <video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_debugging_preview.png">
 <source type="video/webm" src="/fixthelobbies/images/reason_debugging.webm">
 <source type="video/mp4" src="/fixthelobbies/images/reason_debugging.mp4">
 </video>
 </div>
-<p>Developers have little to no ability to track down information leading to the cause of various bugs and crashes, both in the local testing client and especially in the live servers. The types of crashes are wide in range, from some being as simple as a function being renamed by Valve, to others as complicated as an order crashing the server because the order ended up being invalid with the given parameters. This often leads to months of wasted time for developers to track down these bugs. Simple tools, such as the option to forward the server Lua output to a separate site or workshop page, enabling the specate button or re-enabling replays of custom games would help greatly.</p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>AUTOMATED DEDICATED SERVERS</h2>
-<div>
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_servers_preview.png">
-<source type="video/webm" src="/fixthelobbies/images/reason_servers.webm">
-<source type="video/mp4" src="/fixthelobbies/images/reason_servers.mp4">
-</video>
-</div>
-<p>Valve&#39;s <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/6n18qx/something_must_change_about_custom_games_and/">sporadic</a> and seemingly manual process of giving out dedicated servers to custom games has resulted in even popular games not having them, while older games that nobody plays anymore have dedicated servers. Developers have even resorted to cannibalizing older custom games entries to take advantage of their dedicated servers status (Open Angel Arena taking Pimp My Peon&#39;s Entry). Valve should instead automate the process of giving dedicated servers, so that once a game reaches a certain popularity, servers will be allocated, or reallocated if the game becomes unplayed.</p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>PROVIDE CHANGELOG FOR API UPDATES</h2>
-<div>
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_updates_preview.png">
-<source type="video/webm" src="/fixthelobbies/images/reason_updates.webm">
-<source type="video/mp4" src="/fixthelobbies/images/reason_updates.mp4">
-</video>
-</div>
-<p>For a company that prides itself on <a target="_blank" href="https://imgur.com/jszUNxr">supporting</a> user generated content, it&#39;s strange that so little consideration is given for the modding community. Updating a dynamic game like DotA 2 is bound to <a target="_blank" href="https://www.reddit.com/r/DotA2/comments/5iy4k5/700_is_killing_my_custom_game_and_i_cant_do/">break</a> custom games sometimes, but too frequently Valve makes slight or seemingly unnecessary changes (like renaming a function and then changing it back a month later) which breaks many custom games, leaving the community to scramble and try to figure out what has changed and what broke. It would be trivially easy for Valve to provide a simple changelog of updates to the API when they release updates and it would help modders recover much faster from game breaking updates.</p>
+<p><b>Problem:</b>Griefers will join lobbies when they are missing a single player, causing the game to auto-start. This causes the other players to be trapped with the griefer, since they cannot decline (as that would only grant them a 1-hour arcade ban). Bots are especially effective at this type of griefing, for obvious reasons.<br><br><b>Suggested solution:</b> Add a 5s countdown to game start so that hosts will have a chance to kick griefers trying to sneak in. Players should be able to leave the lobby during this countdown, but if they do, this should incur a cooldown (at least 1 minute) on their ability to join the same lobby. If that happens, the lobby should stop the countdown and go back to its previous state (waiting for players).</p>
 </div>
 </div>
 <div class="Container ContactsContainer">
 <div class="Inner">
 <h3>WHAT YOU CAN DO</h3>
-<p>Tell Valve that custom games are important for Dota 2 community!</p>
+<p>Tell Valve that the community tutorial, as well as the Arcade, are important for the Dota 2 community!</p>
 <div class="Cards">
 <div class="Card">
 <a rel="noreferrer" target="_blank" href="mailto:dotacustomgames@valvesoftware.com">
 <img src="/fixthelobbies/images/contact_custom_team.png">
-<h4>Write to Dota 2 Custom Games team</h4>
+<h4>Write to the Dota 2 Custom Games team</h4>
 </a>
 </div>
 <div class="Card">
 <a rel="noreferrer" target="_blank" href="http://www.valvesoftware.com/email.php?recipient=Dota%202%20Team">
 <img src="/fixthelobbies/images/contact_dota_team.png">
-<h4>Write to Dota 2 Team</h4>
+<h4>Write to the Dota 2 Team</h4>
 </a>
 </div>
 <div class="Card">
 <a rel="noreferrer" target="_blank" href="https://dev.dota2.com/forumdisplay.php?f=484">
 <img src="/fixthelobbies/images/contact_forum.png">
-<h4>Make a thread on Dota 2 Dev Forum</h4>
+<h4>Make a thread on the Dota 2 Dev Forum</h4>
 </a>
 </div>
 </div>
