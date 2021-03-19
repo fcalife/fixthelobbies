@@ -19,10 +19,7 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <body>
 <div class="Container HeaderContainer">
 <div class="Inner">
-<video autoplay muted loop preload="auto">
-<source type="video/webm" src="/fixthelobbies/images/header.webm">
-<source type="video/mp4" src="/fixthelobbies/images/header.mp4">
-</video>
+<img src="/fixthelobbies/images/issue_30_games.png">
 <div class="VideoMask"></div>
 <div class="HeaderTitle">
 <h1>HELP THE</h1>
@@ -68,10 +65,7 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <div class="Inner">
 <h2>ISSUE #2: hour-long ban for failing to ready up for a custom game</h2>
 <div>
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_disconnects_preview.png">
-<source type="video/webm" src="/fixthelobbies/images/reason_disconnects.webm">
-<source type="video/mp4" src="/fixthelobbies/images/reason_disconnects.mp4">
-</video>
+<img src="/fixthelobbies/images/issue_hour_ban.png">
 </div>
 <p><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.<br><br>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.<br><br><b>Suggested solution:</b> Do not punish players for not clicking the accept button if:<br>a) It is a single player lobby,<br>b) The lobby does not have full players, or<br>c) The entire lobby is filled by a single party.<br><br>Also, scale the punishment: start with a 5 minute penalty, then increase it to 10 minutes, 30, 60, etc. The Arcade ban should also not affect regular Dota: failing to load a custom game should NOT ban you from matchmaking or from playing with bots, for example.</p>
 </div>
@@ -80,10 +74,7 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <div class="Inner">
 <h2>ISSUE #3: kicked players can rejoin lobbies instantly</h2>
 <div>
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_overview_preview.png">
-<source type="video/webm" src="/fixthelobbies/images/reason_overview.webm">
-<source type="video/mp4" src="/fixthelobbies/images/reason_overview.mp4">
-</video>
+<img src="/fixthelobbies/images/issue_30_games.png">
 </div>
 <p><b>Problem:</b> Players who are kicked from lobbies can instantly rejoin them. This is exploited by bots and griefers to rejoin faster than anyone can kick them out.<br><br><b>Suggested solution:</b> Make it so players cannot rejoin a lobby they have been kicked from either for the duration of the lobby, or for 5 minutes. Also, to avoid bots quickly joining and leaving a lobby in order to avoid being kicked from it, add a small cooldown (5 seconds would be enough) to a player’s ability to enter or leave a lobby (i.e. can’t rejoin if you just left).</p>
 </div>
@@ -92,10 +83,7 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <div class="Inner">
 <h2>ISSUE #4: games auto-start when the last player joins</h2>
 <div>
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_debugging_preview.png">
-<source type="video/webm" src="/fixthelobbies/images/reason_debugging.webm">
-<source type="video/mp4" src="/fixthelobbies/images/reason_debugging.mp4">
-</video>
+<img src="/fixthelobbies/images/issue_30_games.png">
 </div>
 <p><b>Problem:</b>Griefers will join lobbies when they are missing a single player, causing the game to auto-start. This causes the other players to be trapped with the griefer, since they cannot decline (as that would only grant them a 1-hour arcade ban). Bots are especially effective at this type of griefing, for obvious reasons.<br><br><b>Suggested solution:</b> Add a 5s countdown to game start so that hosts will have a chance to kick griefers trying to sneak in. Players should be able to leave the lobby during this countdown, but if they do, this should incur a cooldown (at least 1 minute) on their ability to join the same lobby. If that happens, the lobby should stop the countdown and go back to its previous state (waiting for players).</p>
 </div>
