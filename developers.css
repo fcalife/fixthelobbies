@@ -1,0 +1,108 @@
+.container_developers__header {
+  background: linear-gradient(to bottom, #000 0%, transparent 30%),
+    center top no-repeat url('/fixthelobbies/images/background_developers_0.jpg');
+  height: 333px;
+}
+
+.container_developers__header h1 {
+  max-width: 900px;
+  padding-top: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #e3e3e3;
+  text-shadow: 0px 0px 15px #c12c9a;
+  text-transform: uppercase;
+  font-family: 'Radiance-SemiBold';
+  letter-spacing: 8px;
+  line-height: 1.1;
+  font-size: 4vw;
+}
+/* Small screen / phone */
+@media (min-width: 576px) {
+  .container_developers__header h1 {
+    font-size: 1.66rem;
+  }
+}
+/* Medium screen / tablet */
+@media (min-width: 768px) {
+  .container_developers__header h1 {
+    font-size: 1.75rem;
+  }
+}
+/* Large screen / desktop */
+@media (min-width: 992px) {
+  .container_developers__header h1 {
+    font-size: 2rem;
+  }
+}
+/* Extra large screen / wide desktop */
+@media (min-width: 1200px) {
+  .container_developers__header h1 {
+    font-size: 2rem;
+  }
+}
+
+.container_developers__list {
+  background-image: url(/fixthelobbies/images/background_developers_1.jpg),
+    url(/fixthelobbies/images/background_developers_3.jpg),
+    url(/fixthelobbies/images/background_developers_2.jpg);
+  background-position: center top, center bottom, center top;
+  background-repeat: no-repeat, no-repeat, repeat-y;
+  min-height: 550px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.container_developers__list .Inner {
+  padding: 0 1rem;
+}
+
+@media (max-width: 992px) {
+  .container_developers__list .Inner {
+    max-width: none;
+  }
+}
+@media (min-width: 992px) {
+  .container_developers__list .Inner {
+    padding: 0 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .container_developers__list .Inner {
+    max-width: 1000px;
+  }
+}
+
+.developer {
+  margin-top: 0.625rem;
+}
+
+.developer__hero {
+  margin-bottom: 1.2rem;
+  width: 59px;
+}
+
+.developer__name-and-flag {
+  margin: 5px 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.developer__name-and-flag h3 {
+  margin: 0;
+  line-height: 1;
+  font-family: 'Radiance-SemiBold', Verdana;
+  font-size: 1rem;
+  color: #ada7a9;
+}
+
+.developer__name-and-flag img {
+  margin-left: 0.5rem;
+}
+
+.developer__made ul {
+  font-family: 'Radiance', Verdana;
+  color: #948e90;
+  padding-left: 20px;
+}

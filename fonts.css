@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Radiance';
+  src: url('/fixthelobbies/fonts/radiance.eot');
+  src: url('/fixthelobbies/fonts/radiance.eot#iefix') format('embedded-opentype'),
+    url('/fixthelobbies/fonts/radiance.woff') format('woff'),
+    url('/fixthelobbies/fonts/radiance.ttf') format('truetype'),
+    url('/fixthelobbies/fonts/radiance.svg#ywftswg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Radiance-Bold';
+  src: url('/fixthelobbies/fonts/radiance-bold.eot');
+  src: url('/fixthelobbies/fonts/radiance-bold.eot#iefix') format('embedded-opentype'),
+    url('/fixthelobbies/fonts/radiance-bold.woff') format('woff'),
+    url('/fixthelobbies/fonts/radiance-bold.ttf') format('truetype'),
+    url('/fixthelobbies/fonts/radiance-bold.svg#ywftswg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Radiance-SemiBold';
+  src: url('/fixthelobbies/fonts/radiance-semibold.eot');
+  src: url('/fixthelobbies/fonts/radiance-semibold.eot#iefix') format('embedded-opentype'),
+    url('/fixthelobbies/fonts/radiance-semibold.woff') format('woff'),
+    url('/fixthelobbies/fonts/radiance-semibold.ttf') format('truetype'),
+    url('/fixthelobbies/fonts/radiance-semibold.svg#ywftswg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
