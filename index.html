@@ -1,131 +1,132 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="shortcut icon" href="/fixthelobbies/images/favicon.ico">
-<meta http-equiv="X-UA-Compatible" content="IE=9">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="/fixthelobbies/styles.css" rel="stylesheet" type="text/css">
-<script>
-if (!document.cookie.split(';').some(x => x.trim().startsWith('visited')))
-{
-var language = navigator.language || navigator.userLanguage
-document.cookie += "visited=1"
-if (language.startsWith("ru")) window.location.replace("/ru.html")
-}
-</script>
-<title>Fix Custom Game Lobbies</title>
-</head>
-<body>
-<div class="Container HeaderContainer">
-<div class="Inner">
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/header_preview.png">
-<source type="video/mp4" src="/fixthelobbies/images/header.mp4">
-</video>
-<div class="VideoMask"></div>
-<div class="HeaderTitle">
-<h1>HELP THE</h1>
-<h2>NEW PLAYER EXPERIENCE</h2>
-</div>
-</div>
-</div>
-<div class="Container IntroductionContainer">
-<div class="Inner">
-<h2>FIX CUSTOM GAME LOBBIES</h3>
-<p style="font-family:Radiance">Dota 2 was built upon the legacy of Warcraft 3 custom games and modding. With a new Netflix anime potentially bringing many new players to this game we love so much, it's an excellent time to improve the Arcade experience for the entire Dota community - so that they can keep the tradition strong, by building and enjoying great new custom games!</p>
-<p style="font-family:Radiance">Custom game lobbies are currently plagued by some issues which affect all players, but especially so newer ones. We propose solutions to each issue which would, we hope, make the Arcade more accessible to newcomers.</p>
-<p style="font-family:Radiance">This message is endorsed by the teams behind the following custom games:</p>
-<div class="Credits">
-<a rel="noreferrer" target="_blank" title="12v12" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1576297063">
-<img src="/fixthelobbies/images/12v12.jpg"></a>
-<a rel="noreferrer" target="_blank" title="Auto Chess" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1613886175">
-<img src="/fixthelobbies/images/auto_chess.jpg"></a>
-<a rel="noreferrer" target="_blank" title="Custom Hero Clash" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2141071809">
-<img src="/fixthelobbies/images/custom_hero_clash.jpg"></a>
-<a rel="noreferrer" target="_blank" title="Lostland Commander" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2331812965">
-<img src="/fixthelobbies/images/lostland_commander.jpg"></a>
-<a rel="noreferrer" target="_blank" title="Overthrow 2.0" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1517661692">
-<img src="/fixthelobbies/images/overthrow.jpg"></a>
-<a rel="noreferrer" target="_blank" title="Three Kingdoms Arena" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2218008224">
-<img src="/fixthelobbies/images/three_kingdoms.jpg"></a>
-<a rel="noreferrer" target="_blank" title="Watcher of Samsara" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1793860985">
-<img src="/fixthelobbies/images/samsara.jpg"></a>
-</div>
-<p></p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>ISSUE #1: 30 game requirement to use the Arcade</h2>
-<div>
-<img src="/fixthelobbies/images/issue_30_games.png">
-</div>
-<p style="font-family:Radiance"><b>Problem:</b> Players can no longer download Dota 2 just to play games on the Arcade; instead, they are now forced to play 30 games of Dota 2, even if their original interest was in playing Autochess or some other custom game. This has severely handicapped the Arcade's ability to bring new players into the Dota 2 ecosystem, since many of them will simply see the restriction and leave. This was a band-aid solution to deal with bots, and was never replaced with a better, permanent one.<br><br><b>Suggested solution:</b> Make the 30 game requirement opt-in instead of mandatory, on a custom game basis, by making it an option in the game’s addon settings (addoninfo.txt file). That way, games which are not under bot attack can be enjoyed by new players, and those which are can enable the 30-game bot protection as needed.</p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>ISSUE #2: hour-long ban for failing to ready up for a custom game</h2>
-<div>
-<img src="/fixthelobbies/images/issue_hour_ban.png">
-</div>
-<p style="font-family:Radiance"><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.<br><br>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.<br><br><b>Suggested solution:</b> Do not punish players for not clicking the accept button if:<br>a) It is a single player lobby,<br>b) The lobby does not have full players, or<br>c) The entire lobby is filled by a single party.<br><br>Also, scale the punishment: start with a 5 minute penalty, then increase it to 10 minutes, 30, 60, etc. The Arcade ban should also not affect regular Dota: failing to load a custom game should NOT ban you from matchmaking or from playing with bots, for example.</p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>ISSUE #3: kicked players can rejoin lobbies instantly</h2>
-<div>
-<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_instant_rejoin_preview.png">
-<source type="video/mp4" src="/fixthelobbies/images/issue_instant_rejoin.mp4">
-</video>
-</div>
-<p style="font-family:Radiance"><b>Problem:</b> Players who are kicked from lobbies can instantly rejoin them. This is exploited by bots and griefers to rejoin faster than anyone can kick them out.<br><br><b>Suggested solution:</b> Make it so players cannot rejoin a lobby they have been kicked from either for the duration of the lobby, or for 5 minutes. Also, to avoid bots quickly joining and leaving a lobby in order to avoid being kicked from it, add a small cooldown (5 seconds would be enough) to a player’s ability to enter or leave a lobby (i.e. can’t rejoin if you just left).</p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>ISSUE #4: games auto-start when the last player joins</h2>
-<div>
-<img src="/fixthelobbies/images/issue_auto_start.png">
-</div>
-<p style="font-family:Radiance"><b>Problem:</b> Griefers will join lobbies when they are missing a single player, causing the game to auto-start. This causes the other players to be trapped with the griefer, since they cannot decline (as that would only grant them a 1-hour arcade ban). Bots are especially effective at this type of griefing, for obvious reasons.<br><br><b>Suggested solution:</b> Add a 5s countdown to game start so that hosts will have a chance to kick griefers trying to sneak in. Players should be able to leave the lobby during this countdown, but if they do, this should incur a cooldown (at least 1 minute) on their ability to join the same lobby. If that happens, the lobby should stop the countdown and go back to its previous state (waiting for players).</p>
-</div>
-</div>
-<div class="Container ComplainContainer">
-<div class="Inner">
-<h2>ISSUE #5: updating custom games is a struggle</h2>
-<div>
-<img src="/fixthelobbies/images/issue_updating.png">
-</div>
-<p style="font-family:Radiance"><b>Problem:</b> When a custom game is updated, it becomes impossible to play for about half an hour (or more), as some players will see (and be able to download) the new version, while others won't.<br><br>Lobbies with the old version will stay open for hours, without being able to start, trapping players inside them and sometimes triggering the dreaded hour-long ban (malicious bots also abuse this by sometimes leaving those outdated lobbies open for months). Players frantically uninstall and reinstall the game tens of times, confused and angry at their inability to play and undeserved bans.<br><br><b>Suggested solution:</b> allow developers to name versions, or automatically identify them, and show the identifier on the custom game's page. Let players know immediately that their downloaded version is different from the most up-to-date one. Close all open lobbies immediately when a custom game is updated, and only allow new lobbies to be created by players with the newest version.</p>
-</div>
-</div>
-<div class="Container ContactsContainer">
-<div class="Inner">
-<h3>WHAT CAN YOU DO?</h3>
-<p>Tell Valve that the community tutorial, as well as the Arcade, are important for you!</p>
-<div class="Cards">
-<div class="Card">
-<a rel="noreferrer" target="_blank" href="mailto:dotacustomgames@valvesoftware.com">
-<img src="/fixthelobbies/images/contact_custom_team.png">
-<h4>Write to the Dota 2 Custom Games team</h4>
-</a>
-</div>
-<div class="Card">
-<a rel="noreferrer" target="_blank" href="http://www.valvesoftware.com/email.php?recipient=Dota%202%20Team">
-<img src="/fixthelobbies/images/contact_dota_team.png">
-<h4>Write to the Dota 2 Team</h4>
-</a>
-</div>
-<div class="Card">
-<a rel="noreferrer" target="_blank" href="https://dev.dota2.com/forumdisplay.php?f=484">
-<img src="/fixthelobbies/images/contact_forum.png">
-<h4>Make a thread on the Dota 2 Dev Forum</h4>
-</a>
-</div>
-</div>
-</div>
-</div>
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="/fixthelobbies/images/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="/fixthelobbies/styles.css" rel="stylesheet" type="text/css">
+		<script>
+			if (!document.cookie.split(';').some(x => x.trim().startsWith('visited')))
+			{
+			var language = navigator.language || navigator.userLanguage
+			document.cookie += "visited=1"
+			if (language.startsWith("ru")) window.location.replace("/ru.html")
+			}
+		</script>
+		<title>Fix Custom Game Lobbies</title>
+	</head>
+	<body>
+		<div class="Container HeaderContainer">
+			<div class="Inner">
+				<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/header_preview.png">
+					<source type="video/mp4" src="/fixthelobbies/images/header.mp4">
+				</video>
+				<div class="VideoMask"></div>
+				<div class="HeaderTitle">
+					<h1>HELP THE</h1>
+					<h2>NEW PLAYER EXPERIENCE</h2>
+				</div>
+			</div>
+		</div>
+		<div class="Container IntroductionContainer">
+			<div class="Inner">
+				<h2>
+				FIX CUSTOM GAME LOBBIES</h3>
+				<p style="font-family:Radiance">Dota 2 was built upon the legacy of Warcraft 3 custom games and modding. With a new Netflix anime potentially bringing many new players to this game we love so much, it's an excellent time to improve the Arcade experience for the entire Dota community - so that they can keep the tradition strong, by building and enjoying great new custom games!</p>
+				<p style="font-family:Radiance">Custom game lobbies are currently plagued by some issues which affect all players, but especially so newer ones. We propose solutions to each issue which would, we hope, make the Arcade more accessible to newcomers.</p>
+				<p style="font-family:Radiance">This message is endorsed by the teams behind the following custom games:</p>
+				<div class="Credits">
+					<a rel="noreferrer" target="_blank" title="12v12" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1576297063">
+					<img src="/fixthelobbies/images/12v12.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Auto Chess" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1613886175">
+					<img src="/fixthelobbies/images/auto_chess.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Custom Hero Clash" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2141071809">
+					<img src="/fixthelobbies/images/custom_hero_clash.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Lostland Commander" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2331812965">
+					<img src="/fixthelobbies/images/lostland_commander.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Overthrow 2.0" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1517661692">
+					<img src="/fixthelobbies/images/overthrow.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Three Kingdoms Arena" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2218008224">
+					<img src="/fixthelobbies/images/three_kingdoms.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Watcher of Samsara" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1793860985">
+					<img src="/fixthelobbies/images/samsara.jpg"></a>
+				</div>
+				<p></p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>ISSUE #1: 30 game requirement to use the Arcade</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_30_games.png">
+				</div>
+				<p style="font-family:Radiance"><b>Problem:</b> Players can no longer download Dota 2 just to play games on the Arcade; instead, they are now forced to play 30 games of Dota 2, even if their original interest was in playing Autochess or some other custom game. This has severely handicapped the Arcade's ability to bring new players into the Dota 2 ecosystem, since many of them will simply see the restriction and leave. This was a band-aid solution to deal with bots, and was never replaced with a better, permanent one.<br><br><b>Suggested solution:</b> Make the 30 game requirement opt-in instead of mandatory, on a custom game basis, by making it an option in the game’s addon settings (addoninfo.txt file). That way, games which are not under bot attack can be enjoyed by new players, and those which are can enable the 30-game bot protection as needed.</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>ISSUE #2: hour-long ban for failing to ready up for a custom game</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_hour_ban.png">
+				</div>
+				<p style="font-family:Radiance"><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.<br><br>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.<br><br><b>Suggested solution:</b> Do not punish players for not clicking the accept button if:<br>a) It is a single player lobby,<br>b) The lobby does not have full players, or<br>c) The entire lobby is filled by a single party.<br><br>Also, scale the punishment: start with a 5 minute penalty, then increase it to 10 minutes, 30, 60, etc. The Arcade ban should also not affect regular Dota: failing to load a custom game should NOT ban you from matchmaking or from playing with bots, for example.</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>ISSUE #3: kicked players can rejoin lobbies instantly</h2>
+				<div>
+					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_instant_rejoin_preview.png">
+						<source type="video/mp4" src="/fixthelobbies/images/issue_instant_rejoin.mp4">
+					</video>
+				</div>
+				<p style="font-family:Radiance"><b>Problem:</b> Players who are kicked from lobbies can instantly rejoin them. This is exploited by bots and griefers to rejoin faster than anyone can kick them out.<br><br><b>Suggested solution:</b> Make it so players cannot rejoin a lobby they have been kicked from either for the duration of the lobby, or for 5 minutes. Also, to avoid bots quickly joining and leaving a lobby in order to avoid being kicked from it, add a small cooldown (5 seconds would be enough) to a player’s ability to enter or leave a lobby (i.e. can’t rejoin if you just left).</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>ISSUE #4: games auto-start when the last player joins</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_auto_start.png">
+				</div>
+				<p style="font-family:Radiance"><b>Problem:</b> Griefers will join lobbies when they are missing a single player, causing the game to auto-start. This causes the other players to be trapped with the griefer, since they cannot decline (as that would only grant them a 1-hour arcade ban). Bots are especially effective at this type of griefing, for obvious reasons.<br><br><b>Suggested solution:</b> Add a 5s countdown to game start so that hosts will have a chance to kick griefers trying to sneak in. Players should be able to leave the lobby during this countdown, but if they do, this should incur a cooldown (at least 1 minute) on their ability to join the same lobby. If that happens, the lobby should stop the countdown and go back to its previous state (waiting for players).</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>ISSUE #5: updating custom games is a struggle</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_updating.png">
+				</div>
+				<p style="font-family:Radiance"><b>Problem:</b> When a custom game is updated, it becomes impossible to play for about half an hour (or more), as some players will see (and be able to download) the new version, while others won't.<br><br>Lobbies with the old version will stay open for hours, without being able to start, trapping players inside them and sometimes triggering the dreaded hour-long ban (malicious bots also abuse this by sometimes leaving those outdated lobbies open for months). Players frantically uninstall and reinstall the game tens of times, confused and angry at their inability to play and undeserved bans.<br><br><b>Suggested solution:</b> allow developers to name versions, or automatically identify them, and show the identifier on the custom game's page. Let players know immediately that their downloaded version is different from the most up-to-date one. Close all open lobbies immediately when a custom game is updated, and only allow new lobbies to be created by players with the newest version.</p>
+			</div>
+		</div>
+		<div class="Container ContactsContainer">
+			<div class="Inner">
+				<h3>WHAT CAN YOU DO?</h3>
+				<p>Tell Valve that the community tutorial, as well as the Arcade, are important for you!</p>
+				<div class="Cards">
+					<div class="Card">
+						<a rel="noreferrer" target="_blank" href="mailto:dotacustomgames@valvesoftware.com">
+							<img src="/fixthelobbies/images/contact_custom_team.png">
+							<h4>Write to the Dota 2 Custom Games team</h4>
+						</a>
+					</div>
+					<div class="Card">
+						<a rel="noreferrer" target="_blank" href="http://www.valvesoftware.com/email.php?recipient=Dota%202%20Team">
+							<img src="/fixthelobbies/images/contact_dota_team.png">
+							<h4>Write to the Dota 2 Team</h4>
+						</a>
+					</div>
+					<div class="Card">
+						<a rel="noreferrer" target="_blank" href="https://dev.dota2.com/forumdisplay.php?f=484">
+							<img src="/fixthelobbies/images/contact_forum.png">
+							<h4>Make a thread on the Dota 2 Dev Forum</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

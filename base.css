@@ -28,6 +28,13 @@ a:hover {
   margin-right: auto;
 }
 
+.Credits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
 /* Small screen / phone */
 @media (min-width: 576px) {
   .Container .Inner { max-width: 540px; }
