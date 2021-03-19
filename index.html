@@ -19,7 +19,10 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <body>
 <div class="Container HeaderContainer">
 <div class="Inner">
-<img src="/fixthelobbies/images/issue_30_games.png">
+<video autoplay muted loop preload="auto">
+<source type="video/webm" src="/fixthelobbies/images/header.webm">
+<source type="video/mp4" src="/fixthelobbies/images/header.mp4">
+</video>
 <div class="VideoMask"></div>
 <div class="HeaderTitle">
 <h1>HELP THE</h1>
@@ -74,7 +77,10 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <div class="Inner">
 <h2>ISSUE #3: kicked players can rejoin lobbies instantly</h2>
 <div>
-<img src="/fixthelobbies/images/issue_30_games.png">
+<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/reason_debugging_preview.png">
+<source type="video/webm" src="/fixthelobbies/images/reason_debugging.webm">
+<source type="video/mp4" src="/fixthelobbies/images/reason_debugging.mp4">
+</video>
 </div>
 <p><b>Problem:</b> Players who are kicked from lobbies can instantly rejoin them. This is exploited by bots and griefers to rejoin faster than anyone can kick them out.<br><br><b>Suggested solution:</b> Make it so players cannot rejoin a lobby they have been kicked from either for the duration of the lobby, or for 5 minutes. Also, to avoid bots quickly joining and leaving a lobby in order to avoid being kicked from it, add a small cooldown (5 seconds would be enough) to a player’s ability to enter or leave a lobby (i.e. can’t rejoin if you just left).</p>
 </div>
@@ -83,7 +89,7 @@ if (language.startsWith("ru")) window.location.replace("/ru.html")
 <div class="Inner">
 <h2>ISSUE #4: games auto-start when the last player joins</h2>
 <div>
-<img src="/fixthelobbies/images/issue_30_games.png">
+<img src="/fixthelobbies/images/issue_auto_start.png">
 </div>
 <p><b>Problem:</b>Griefers will join lobbies when they are missing a single player, causing the game to auto-start. This causes the other players to be trapped with the griefer, since they cannot decline (as that would only grant them a 1-hour arcade ban). Bots are especially effective at this type of griefing, for obvious reasons.<br><br><b>Suggested solution:</b> Add a 5s countdown to game start so that hosts will have a chance to kick griefers trying to sneak in. Players should be able to leave the lobby during this countdown, but if they do, this should incur a cooldown (at least 1 minute) on their ability to join the same lobby. If that happens, the lobby should stop the countdown and go back to its previous state (waiting for players).</p>
 </div>
