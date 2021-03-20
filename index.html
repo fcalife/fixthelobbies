@@ -9,9 +9,7 @@
 		<script>
 			if (!document.cookie.split(';').some(x => x.trim().startsWith('visited')))
 			{
-			var language = navigator.language || navigator.userLanguage
 			document.cookie += "visited=1"
-			if (language.startsWith("ru")) window.location.replace("/ru.html")
 			}
 		</script>
 		<title>Fix Custom Game Lobbies</title>
