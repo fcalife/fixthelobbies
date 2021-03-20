@@ -13,7 +13,7 @@
   color: #fff;
 
   font-family: Radiance;
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 2.2px;
   padding: 11px 19px;
   background: rgba(237,59,28,.56);
@@ -26,15 +26,24 @@
 }
 /* Medium screen / tablet */
 @media (min-width: 768px) {
-  .ComplainContainer h2 { margin-top: 4rem; }
+  .ComplainContainer h2 {
+    font-size: 30px;
+    margin-top: 4rem;
+  }
 }
 /* Large screen / desktop */
 @media (min-width: 992px) {
-  .ComplainContainer h2 { margin-top: 6rem; }
+  .ComplainContainer h2 {
+    font-size: 30px;
+    margin-top: 6rem;
+  }
 }
 /* Extra large screen / wide desktop */
 @media (min-width: 1200px) {
-  .ComplainContainer h2 { margin-top: 8rem; }
+  .ComplainContainer h2 {
+    font-size: 30px;
+    margin-top: 8rem;
+  }
 }
 
 .ComplainContainer .Inner div {
