@@ -26,29 +26,37 @@
 .HeaderTitle {
   position: absolute;
   top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 10%;
   margin-left: auto;
   margin-right: auto;
   max-height: 100%;
-  font-size: 12vw;
+  font-size: 3rem;
 }
 
 /* Small screen / phone */
 @media (min-width: 576px) {
-  .HeaderTitle { font-size: 2.5rem; }
+  .HeaderTitle { font-size: 3rem; }
 }
 /* Medium screen / tablet */
 @media (min-width: 768px) {
-  .HeaderTitle { font-size: 3.5rem; }
+  .HeaderTitle {
+    left: 15%;
+    font-size: 4rem;
+  }
 }
 /* Large screen / desktop */
 @media (min-width: 992px) {
-  .HeaderTitle { font-size: 4.5rem; }
+  .HeaderTitle {
+    left: 20%;
+    font-size: 5rem;
+  }
 }
 /* Extra large screen / wide desktop */
 @media (min-width: 1200px) {
-  .HeaderTitle { font-size: 5rem; }
+  .HeaderTitle {
+    left: 20%;
+    font-size: 5.5rem;
+  }
 }
 
 .HeaderTitle h1 {
