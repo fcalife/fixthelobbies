@@ -36,19 +36,19 @@
 
 /* Small screen / phone */
 @media (min-width: 576px) {
-  .HeaderTitle { font-size: 4rem; }
+  .HeaderTitle { font-size: 3.5rem; }
 }
 /* Medium screen / tablet */
 @media (min-width: 768px) {
-  .HeaderTitle { font-size: 4.5rem; }
+  .HeaderTitle { font-size: 4rem; }
 }
 /* Large screen / desktop */
 @media (min-width: 992px) {
-  .HeaderTitle { font-size: 5rem; }
+  .HeaderTitle { font-size: 4.5rem; }
 }
 /* Extra large screen / wide desktop */
 @media (min-width: 1200px) {
-  .HeaderTitle { font-size: 5.5rem; }
+  .HeaderTitle { font-size: 5rem; }
 }
 
 .HeaderTitle h1 {
