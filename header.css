@@ -36,11 +36,11 @@
 
 /* Small screen / phone */
 @media (min-width: 576px) {
-  .HeaderTitle { font-size: 3.5rem; }
+  .HeaderTitle { font-size: 2.5rem; }
 }
 /* Medium screen / tablet */
 @media (min-width: 768px) {
-  .HeaderTitle { font-size: 4rem; }
+  .HeaderTitle { font-size: 3.5rem; }
 }
 /* Large screen / desktop */
 @media (min-width: 992px) {
