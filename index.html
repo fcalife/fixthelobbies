@@ -41,12 +41,18 @@
 					<img src="/fixthelobbies/images/auto_chess.jpg"></a>
 					<a rel="noreferrer" target="_blank" title="Custom Hero Clash" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2141071809">
 					<img src="/fixthelobbies/images/custom_hero_clash.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Dota IMBA" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1350425247">
+					<img src="/fixthelobbies/images/dota_imba.jpg"></a>
 					<a rel="noreferrer" target="_blank" title="Lostland Commander" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2331812965">
 					<img src="/fixthelobbies/images/lostland_commander.jpg"></a>
 					<a rel="noreferrer" target="_blank" title="Overthrow 2.0" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1517661692">
 					<img src="/fixthelobbies/images/overthrow.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Pudge Wars" href="https://steamcommunity.com/sharedfiles/filedetails/?id=296831818">
+					<img src="/fixthelobbies/images/pudge_wars.jpg"></a>
 					<a rel="noreferrer" target="_blank" title="Three Kingdoms Arena" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2218008224">
 					<img src="/fixthelobbies/images/three_kingdoms.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="X Hero Siege" href="https://steamcommunity.com/sharedfiles/filedetails/?id=536682348">
+					<img src="/fixthelobbies/images/x_hero_siege.jpg"></a>
 					<a rel="noreferrer" target="_blank" title="Watcher of Samsara" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1793860985">
 					<img src="/fixthelobbies/images/samsara.jpg"></a>
 				</div>
@@ -73,7 +79,18 @@
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #3: kicked players can rejoin lobbies instantly</h2>
+				<h2>ISSUE #3: penalty-enabled custom games apply a 1-hour ban for no reason</h2>
+				<div>
+					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_auto_ban_preview.png">
+						<source type="video/mp4" src="/fixthelobbies/images/issue_auto_ban.mp4">
+					</video>
+				</div>
+				<p style="font-family:Radiance"><b>Problem:</b> This is a recent problem, only having been noticed this last week. Upon starting a match in any custom game with leaver penalties enabled, all players' abandon timers will start counting down, and, after 5 minutes, they will all receive an abandon (and 1 hour ban from the Arcade). Players have discovered that manually disconnecting/reconnecting during that period is a valid workaround for the issue, and stops the abandon timer.<br><br><b>Suggested solution:</b> This was a recently introduced bug, and as such, all it takes is to isolate and fix it, or revert its relevant update. We of course speculate, based on the given workaround, that the root cause of the bug is related to improperly detecting, or validating, players' initial connection state to the game, but Valve is better positioned to diagnose and fix this issue.</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>ISSUE #4: kicked players can rejoin lobbies instantly</h2>
 				<div>
 					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_instant_rejoin_preview.png">
 						<source type="video/mp4" src="/fixthelobbies/images/issue_instant_rejoin.mp4">
@@ -84,7 +101,7 @@
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #4: games auto-start when the last player joins</h2>
+				<h2>ISSUE #5: games auto-start when the last player joins</h2>
 				<div>
 					<img src="/fixthelobbies/images/issue_auto_start.png">
 				</div>
@@ -93,7 +110,7 @@
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #5: updating custom games is a struggle</h2>
+				<h2>ISSUE #6: updating custom games is a struggle</h2>
 				<div>
 					<img src="/fixthelobbies/images/issue_updating.png">
 				</div>
