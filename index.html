@@ -127,12 +127,6 @@
 				</h2>
 				<div id="OtherIssuesBody">
 					<div class="SmallIssue">
-						<h3>If a custom game has penalties enabled, players will erroneously receive an hour penalty for no reason</h3>
-						<b>Problem:</b> A recent problem has been introduced to custom games, this issue was only noticed within the last two weeks. Custom games that have penalties enabled will give an hour penalty to all players in the game. For example in 12v12, after 5 minutes of playing the game, all players will receive a penalty as if they had abandoned the game, since it only does this after 5 minutes, it's expected that its related to afk tracker setting in addoninfo, but that is just speculation. The current work around is for players to disconnect and reconnect in the early stages of the game to avoid getting the penalty, this for some reason avoids the bug, but is obviously not an ideal solution.
-						<br><br>
-						<b>Suggested solution:</b> Revert recent changes to custom games that introduced this bug or otherwise prevent custom games from giving out penalties to players who have not abandoned.. 
-					</div>
-					<div class="SmallIssue">
 						<h3>It's possible to create malicious lobbies with improper settings</h3>
 						<b>Problem:</b> Users are able to create lobbies with impossible settings for the given custom game. For example creating a 24 player lobby for a custom game that is maximum 10 players. Some people do this for malicious reasons, to act as a ‘trap’ lobby that players will be automatically placed into when they press the ‘Play’ button, until the lobby eventually fills up to 24 players in which the lobby will attempt to launch but fail because the custom game cannot support that amount of players. It's also possible to create lobbies with -1 max players (in attempt to increase lobby count of custom game), its possible to create public lobbies with sv_cheats 1 enabled (for hackers to abuse), it's also possible to create lobbies with penalties enabled, even if the custom game does not have penalties enabled. This is also used to create lobbies that will never fill and hence inflate the “Open Lobby” count for custom games.
 						<br><br>
