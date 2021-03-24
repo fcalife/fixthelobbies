@@ -1,0 +1,88 @@
+
+#OtherIssuesTitle h2 {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+	margin-top: 0;
+}
+
+#OtherIssuesTitle {
+	margin-bottom: 50px;
+}
+
+#OtherIssuesTitle img {
+	height: 50px;
+	width: 50px;
+	transition: transform 0.3s;
+	transform: rotate(180deg);
+}
+
+#OtherIssuesTitle:not(.open) img {
+	transform: rotate(0deg);
+}
+
+#OtherIssuesTitle .Placeholder {
+	color: white;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -20px;
+	transition: opacity 0.3s;
+	box-shadow: none;
+}
+
+#OtherIssuesTitle.open .Placeholder {
+	opacity: 0;
+}
+
+#OtherIssuesBody {
+	height: 0px;
+	opacity: 0;
+	overflow: hidden;
+	transition: height 0.3s, opacity 0.3s;
+}
+
+#OtherIssuesTitle.open #OtherIssuesBody {
+	opacity: 1;
+}
+
+#OtherIssuesBody h3 {
+	margin-left: -20px;
+	padding: 10px;
+	padding-right: 25%;
+	color: rgb(230, 230, 230);
+	font-family: Radiance;
+	letter-spacing: 0.5px;
+	font-size: 22px;
+	background: -webkit-linear-gradient(left, rgb(50,50,50), rgb(20, 20, 20));
+	margin-bottom: 20px;
+}
+
+#OtherIssuesBody {
+	color: #939393;
+	font-family: Radiance;
+/*	background: rgb(20, 20, 20);*/
+}
+
+#OtherIssuesBody .SmallIssue {
+/*	box-shadow: none;*/
+	font-family: Radiance;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	background: rgb(20, 20, 20);
+	font-size: 18px;
+}
+
+#OtherIssuesBody .SmallIssue b {
+	color: rgb(180, 180, 180);
+}
+
+#OtherIssuesBody .SmallIssue img {
+	all: initial;
+	width: 100%;
+}
