@@ -5,11 +5,12 @@
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
 */
+@import "fonts.css";
 @import "bootstrap-reboot.min.css";
 @import "base.css";
 @import "complain.css";
 @import "contacts.css";
-@import "developer.css";
-@import "fonts.css";
+@import "developers.css";
 @import "header.css";
 @import "introduction.css";
+@import "other.css";

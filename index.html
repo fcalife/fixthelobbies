@@ -5,6 +5,7 @@
 		<link rel="shortcut icon" href="/fixthelobbies/images/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=9">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="/fixthelobbies/fonts.css" rel="stylesheet" type="text/css">
 		<link href="/fixthelobbies/styles.css" rel="stylesheet" type="text/css">
 		<script>
 			if (!document.cookie.split(';').some(x => x.trim().startsWith('visited')))
@@ -12,6 +13,7 @@
 			document.cookie += "visited=1"
 			}
 		</script>
+		<script src="app.js"></script>
 		<title>Fix Custom Game Lobbies</title>
 	</head>
 	<body>
@@ -115,6 +117,59 @@
 					<img src="/fixthelobbies/images/issue_updating.png">
 				</div>
 				<p style="font-family:Radiance"><b>Problem:</b> When a custom game is updated, it becomes impossible to play for about half an hour (or more), as some players will see (and be able to download) the new version, while others won't.<br><br>Lobbies with the old version will stay open for hours, without being able to start, trapping players inside them and sometimes triggering the dreaded hour-long ban (malicious bots also abuse this by sometimes leaving those outdated lobbies open for months). Players frantically uninstall and reinstall the game tens of times, confused and angry at their inability to play and undeserved bans.<br><br><b>Suggested solution:</b> Let players know immediately that their downloaded version is different from the most up-to-date one. Close all open lobbies immediately when a custom game is updated, and only allow new lobbies to be created by players with the newest version. When players attempt to join or create a lobby, the game should check their local version, update it if necessary, and only after that allow said joining/creation.</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div id="OtherIssuesTitle" class="Inner">
+				<h2 onclick="ExpandOtherIssues();">
+					Other Issues
+					<img src="images/arrow.svg" class="noSelect">
+				</h2>
+				<div id="OtherIssuesBody">
+					<div class="SmallIssue">
+						<h3>If a custom game has penalties enabled, players will erroneously receive an hour penalty for no reason</h3>
+						<b>Problem:</b> A recent problem has been introduced to custom games, this issue was only noticed within the last two weeks. Custom games that have penalties enabled will give an hour penalty to all players in the game. For example in 12v12, after 5 minutes of playing the game, all players will receive a penalty as if they had abandoned the game, since it only does this after 5 minutes, it's expected that its related to afk tracker setting in addoninfo, but that is just speculation. The current work around is for players to disconnect and reconnect in the early stages of the game to avoid getting the penalty, this for some reason avoids the bug, but is obviously not an ideal solution.
+						<br><br>
+						<b>Suggested solution:</b> Revert recent changes to custom games that introduced this bug or otherwise prevent custom games from giving out penalties to players who have not abandoned.. 
+					</div>
+					<div class="SmallIssue">
+						<h3>It's possible to create malicious lobbies with improper settings</h3>
+						<b>Problem:</b> Users are able to create lobbies with impossible settings for the given custom game. For example creating a 24 player lobby for a custom game that is maximum 10 players. Some people do this for malicious reasons, to act as a ‘trap’ lobby that players will be automatically placed into when they press the ‘Play’ button, until the lobby eventually fills up to 24 players in which the lobby will attempt to launch but fail because the custom game cannot support that amount of players. It's also possible to create lobbies with -1 max players (in attempt to increase lobby count of custom game), its possible to create public lobbies with sv_cheats 1 enabled (for hackers to abuse), it's also possible to create lobbies with penalties enabled, even if the custom game does not have penalties enabled. This is also used to create lobbies that will never fill and hence inflate the “Open Lobby” count for custom games.
+						<br><br>
+						<img src="images/issue_malicious_lobbies.png">
+						<br><br>
+						<b>Suggested solution:</b> Do not allow lobbies to have settings that don’t make sense. Verify lobbies settings with what is acceptable for that custom game, and either deny lobby creation of lobbies with incorrect settings, or do not list lobbies which have incorrect settings so players cannot accidentally join them.
+					</div>
+					<div class="SmallIssue">
+						<h3>Botted and Fake lobbies intended to artificially inflate a custom game’s position in list of custom games</h3>
+						<b>Problem:</b> Certain custom game developers have resorted to creating fake lobbies to artificially boost their custom game position in the list of custom games (Because custom games are ranked by the amount of open lobbies). It is common practice, and currently the top 6 custom games in the list, all have artificial lobbies to varying degrees. While the open lobby ranking is preferable to the old static top 10 list of custom games, this abuse is unfortunate. 
+						<br><br>
+						<b>Suggested solution:</b> We could think of no clear and easy way to fix this problem. One step in the right direction is to delist lobbies (or remove) that have a) Incorrect configurations so that its impossible for people to join or b) Are running outdated versions of the custom game so it's also impossible to join. A solution would be for the game coordinator to periodically check the legitimacy of open lobbies, and even forcefully shut down ones that are unable to be joined, or delist them.
+					</div>
+					<div class="SmallIssue">
+						<h3>No option to ban players from your lobby</h3>
+						<b>Problem:</b> Some rare, but extremely toxic and dedicated actors exist in the community - players that will continually join custom games, in some cases for years, with the sole intent of trolling and griefing the game. Hosts have no way to ban these players from their lobbies, so they have to kick them each time they host (and remember, they are currently free to immediately rejoin).
+						<br><br>
+						<b>Suggested solution:</b> Allow players to have a personal banlist, so that when they host a lobby, players on their banlist cannot join the lobby. For ease of use the Steam block use can double up as the ingame banlist, with adding of a “Ban” option when hosts right click on a player in their lobby.
+					</div>
+					<div class="SmallIssue">
+						<h3>Players in parties can exceed max players of custom game</h3>
+						<b>Problem:</b> It's possible for parties of players to play a custom game beyond its maximum players. E.g. a two player party can click the “Play” button on a custom game that is only max 1 player, they will be able to join the game, the game will not work like this but it would be better if this was not possible. 
+						<br><br>
+						<b>Suggested solution:</b> Fix the exploit that allows parties to exceed custom game max players. 
+					</div>
+					<div class="SmallIssue">
+						<h3>Developers do not have access to server crash logs</h3>
+						<b>Problem:</b> Server logs, especially crash logs are not available to developers. Valve must have them, so it's a shame we cannot access or view them, as it would greatly help with debugging and development.
+						<br><br>
+						<img src="images/issue_crash_logs.png">
+						<br><br>
+						<b>Suggested solution:</b> Add an option to view/download the last 10 dedicated server logs. This option could be added to the “Workshop Manager” application.
+					</div>
+				</div>
+				<div class="Placeholder noSelect">
+					...
+				</div>
 			</div>
 		</div>
 		<div class="Container ContactsContainer">
