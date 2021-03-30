@@ -35,6 +35,14 @@ a:hover {
   gap: 5px;
 }
 
+.Credits img {
+	transition: transform 0.2s;
+}
+
+.Credits img:hover {
+	transform: scale(1.05);
+}
+
 /* Small screen / phone */
 @media (min-width: 576px) {
   .Container .Inner { max-width: 540px; }
