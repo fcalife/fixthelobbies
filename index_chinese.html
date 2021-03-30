@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="/fixthelobbies/images/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="/fixthelobbies/fonts.css" rel="stylesheet" type="text/css">
+		<link href="/fixthelobbies/styles.css" rel="stylesheet" type="text/css">
+		<script>
+			if (!document.cookie.split(';').some(x => x.trim().startsWith('visited')))
+			{
+			document.cookie += "visited=1"
+			}
+		</script>
+		<script src="app.js"></script>
+		<title>拯救自定义游戏大厅</title>
+	</head>
+	<body>
+		<div id="LanguageContainer">
+			<img id="en" onclick="ChangeLanguage(this)" src="images/flags/flag_usa.png">
+			<img id="ru" onclick="ChangeLanguage(this)" src="images/flags/flag_russia.png">
+			<img id="ch" onclick="ChangeLanguage(this)" class="selected" src="images/flags/flag_china.png">
+		</div>
+		<div class="Container HeaderContainer">
+			<div class="Inner">
+				<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/header_preview.png">
+					<source type="video/mp4" src="/fixthelobbies/images/header.mp4">
+				</video>
+				<div class="VideoMask"></div>
+				<div class="HeaderTitle">
+					<h1>改善</h1>
+					<h2>新玩家体验</h2>
+				</div>
+			</div>
+		</div>
+		<div class="Container IntroductionContainer">
+			<div class="Inner">
+				<h2>拯救自定义游戏大厅</h2>
+				<p style="font-family:Radiance">Dota2 发源于《魔兽争霸 3》的自定义游戏与模组。<a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=dSWWs392_BA">随着一部全新 Netflix 动漫的推出</a>，众多新玩家将有极大可能会被引入这款我们热爱的游戏中。所以，这是为 Dota 社区改善游廊体验的绝佳时机，也是推动社区实现传统延续的良好契机——这一切，只有通过不断构建能让玩家获得优秀体验的自定义游戏才能实现。</p>
+				<p style="font-family:Radiance">自定义游戏大厅目前正在经受一些困扰着所有玩家的问题。但对于新玩家而言，这些问题尤为严重——在完成至少 30 场 dota 匹配赛之前，他们甚至<b>完全无法游玩</b>！针对其中的每一个问题，我们都提出了解决方案，希望这样能够让游廊更好地吸引新玩家。</p>
+				<p style="font-family:Radiance">本消息由以下自定义游戏背后的团队倡导发出：</p>
+				<div class="Credits">
+					<a rel="noreferrer" target="_blank" title="12v12" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1576297063">
+					<img src="/fixthelobbies/images/12v12.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Auto Chess" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1613886175">
+					<img src="/fixthelobbies/images/auto_chess.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Custom Hero Clash" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2141071809">
+					<img src="/fixthelobbies/images/custom_hero_clash.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Dota IMBA" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1350425247">
+					<img src="/fixthelobbies/images/dota_imba.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Lostland Commander" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2331812965">
+					<img src="/fixthelobbies/images/lostland_commander.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Overthrow 2.0" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1517661692">
+					<img src="/fixthelobbies/images/overthrow.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Pudge Wars" href="https://steamcommunity.com/sharedfiles/filedetails/?id=296831818">
+					<img src="/fixthelobbies/images/pudge_wars.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Three Kingdoms Arena" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2218008224">
+					<img src="/fixthelobbies/images/three_kingdoms.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="X Hero Siege" href="https://steamcommunity.com/sharedfiles/filedetails/?id=536682348">
+					<img src="/fixthelobbies/images/x_hero_siege.jpg"></a>
+					<a rel="noreferrer" target="_blank" title="Watcher of Samsara" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1793860985">
+					<img src="/fixthelobbies/images/samsara.jpg"></a>
+				</div>
+				<p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>问题 #1：使用游廊的 30 场游戏要求</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_30_games.png">
+				</div>
+				<p style="font-family:Radiance"><b>困难：</b>玩家不能再仅为了游廊而下载 Dota2；相反，玩家现在必须要完成 30 场 Dota2 游戏，即便他们的初衷是游玩自走棋或是其他自定义游戏。这严重阻碍了游廊将新玩家引入 Dota2 生态系统的能力，因为他们中的许多人只能在这样的限制下选择离开。这是应对机器人的创可贴式解决方案，官方从未采用更优秀的永久性解决方案。<br><br><b>建议解决方案：</b>对于自定义游戏，将 30 场游戏的限制作为默认生效选项，而不是必要条件。可以在游戏的插件设置（addoninfo.txt 文件）中添加相应选项。这样，新玩家就可游玩那些不存在机器人问题的游戏，存在问题的游戏则可按需启用 30 场游戏的机器人保护措施。</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>问题 #2：时长为一小时的自定义游戏未准备封禁</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_hour_ban.png">
+				</div>
+				<p style="font-family:Radiance"><b>困难：</b>如果玩家未能在任意自定义游戏大厅中点击接受，则会被给予时长 1 小时的封禁。这对于真实玩家而言无疑是过于严重的惩罚，也会在简单人为错误的作用下不断引发问题。<br><br>跟严重的是，这样的惩罚措施甚至会在仅有 1 名玩家的<i>大厅中生效。</i>如果大厅房主是一名恶意玩家，那么也可以利用这一规则，因为他可以提前（在达到合适数量的玩家之前）开始游戏， 然后让普通玩家承担其控制之外的 1 小时惩罚，或是浪费掉他们花在寻找当前大厅的几分钟时间。<br><br><b>建议解决方案：</b>再符合以下条件是，不要对没有点击接受按钮的玩家作出惩罚：<br>a) 单人大厅<br>b) 大厅中玩家数量未满<br>c) 整个大厅全部是同一队伍的玩家。<br><br>此外还可以划分惩罚措施的等级：从 5 分钟开始，逐步提高至 10 分钟、30 分钟、60 分钟等等。游廊封禁不应对正常 Dota 造成影响。比如，自定义游戏加载失败不应影响匹配或与机器人游玩的选项。</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>问题 #3：启用了惩罚的自定义游戏会无缘无故地进行 1 小时封禁</h2>
+				<div>
+					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_auto_ban_preview.jpg">
+						<source type="video/mp4" src="/fixthelobbies/images/issue_auto_ban.mp4">
+					</video>
+				</div>
+				<p style="font-family:Radiance"><b>困难：</b>这是最近出现的问题，我们上周才注意到其存在。在任何启用了中途离开惩罚的自定义游戏中，游戏开始时，所有玩家的中途离开计时器将开始倒计时，并且在 5 分钟后，他们都将出现中途离开的情况（以及 1 小时的游廊封禁惩罚）。玩家发现，在此期间手动断开/重新连接是该问题的有效解决方法，且能停止中途离开计时器的倒计时。<br><br><b>建议解决方案：</b>这是一个最近出现的漏洞，所以希望找出其根源并进行修复不是一项困难的工作，或着也可回退相关更新。根据上面的玩家解决方法，我们推测，导致该问题的原因存在于游戏开始时对于玩家连接状态的检测和验证过程中。不过这只是我们的猜测，Valve 一定能更好地找到并解决这一问题。</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>问题 #4：被踢出的玩家可以立即重新加入大厅</h2>
+				<div>
+					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_instant_rejoin_preview.jpg">
+						<source type="video/mp4" src="/fixthelobbies/images/issue_instant_rejoin.mp4">
+					</video>
+				</div>
+				<p style="font-family:Radiance"><b>困难：</b>从大厅中被踢出的玩家可以立即重新加入其中。这是一个可被机器人与恶意玩家利用的问题：他们重新加入的速度甚至超过了被踢出的速度。<br><br><b>建议解决方案：</b>让玩家无法在大厅存在期间（或 5 分钟内）重新加入自己被踢出的大厅。同时，为了避免机器人通过快速离开/加入大厅来规避踢出，可为玩家添加一个进入/离开大厅的冷却时间（5 秒即可，即在玩家离开大厅后无法立即重新加入）。</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>问题 #5：游戏在最后一名玩家加入后自动开始</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_auto_start.png">
+				</div>
+				<p style="font-family:Radiance"><b>困难：</b>恶意玩家会在大厅还剩最后一个空位时加入大厅，导致游戏自动开始。这会将其他正常玩家与恶意玩家困在一起，因为他们无法中途退出（因为存在 1 个小时的游廊封禁）。由于显而易见的原因，机器人在进行此类恶意行为时特别有效。<br><br><b>建议解决方案：</b>添加 5 秒的游戏开始倒计时，以便房主有机会踢出试图混入的恶意玩家。玩家应当能够在此倒计时期间离开大厅，但在这么做的同时，他们也需要在一段冷却时间后（至少 1 分钟）才能重新加入同一个大厅。如果发生了此类情况，那么大厅应当停止倒计时并返回其之前的状态（等待玩家）。</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div class="Inner">
+				<h2>问题 #6：自定义游戏的更新工作过于折磨</h2>
+				<div>
+					<img src="/fixthelobbies/images/issue_updating.png">
+				</div>
+				<p style="font-family:Radiance"><b>困难：</b>更新时，玩家将至少半小时（甚至更久）无法游玩自定义游戏，因为只有部分玩家可以查看（以及下载）新版本，其他玩家则无法看到。<br><br>使用旧版本的大厅将在几小时内继续保持开启状态，但却无法开始游戏，使得玩家被困在其中，有时还会触发那“神奇”的一小时封禁（恶意机器人有时也会利用这一点，让那些已过期的大厅持续开启好几个月）。玩家只能狂躁地卸载重装游戏，对于自己的无法游玩以及莫名其妙的封禁感到困惑和愤怒。<br><br><b>建议解决方案：</b>立即告知玩家其已下载的版本与最新版本不同。在自定义游戏更新后立即关闭所有已建立的大厅，仅允许安装有最新版本的玩家创建新大厅。当玩家尝试加入或创建大厅时，游戏应该对其本地版本进行检查并在必要时更新，且仅有在完成此步骤之后才允许玩家加入/创建。</p>
+			</div>
+		</div>
+		<div class="Container ComplainContainer">
+			<div id="OtherIssuesTitle" class="Inner">
+				<h2 onclick="ExpandOtherIssues();">其他问题（按重要顺序排列）<img src="/fixthelobbies/images/arrow.svg" class="noSelect"></h2>
+				<div id="OtherIssuesBody">
+					<div class="SmallIssue">
+						<h3>不正确的设置可能会导致创建恶意大厅</h3>
+						<b>困难：</b>玩家能够以自定义游戏中不可能出现的设置建立大厅。例如，为最多 10 名玩家的自定义游戏创建一个允许 24 名玩家的大厅。部分玩家采取此类行为的原因是完全恶意的。这样的大厅就是一种“陷阱”大厅。在大厅最终聚集了 24 名玩家后，大厅将会试着启动游戏，但最后会失败，因为自定义游戏根本就不支持这么多的玩家。此外还可以创建最大玩家数是 -1 的大厅（这是为了增加自定义游戏的大厅数量），可以创建启用了 sv_cheats 1 的公开大厅（作弊滥用），还可以创建启用惩罚的大厅（即使自定义游戏本身没有启用惩罚机制）。这可用于创建永远不会有玩家加入的大厅，可增加自定义游戏的开放大厅数量。<br><br>
+						<img src="/fixthelobbies/images/issue_malicious_lobbies.png">
+						<br><br>
+						<b>建议解决方案：</b>不要在建立大厅时允许没有意义的设置。使用自定义游戏可接受的设置来对大厅设置进行校验，之后或是拒绝创建设置不正确的大厅，或是拒绝列出设置不正确的大厅，这样玩家就不会意外加入其中了。
+					</div>
+					<div class="SmallIssue">
+						<h3>旨在人工提升自定义游戏排名的机器人大厅或虚假大厅</h3>
+						<b>困难：</b>部分自定义游戏开发者正在通过创建虚假大厅来人为提高其游戏的排名（因为自定义游戏的排名是依照开放大厅的数量确定的）。这种做法十分常见，目前列表中排名前 6 的自定义游戏都存在不同程度的虚假大厅创建情况。虽然根据开放大厅进行排名的方式要优于先前的静态前 10 自定义游戏列表，但出现这样的滥用情况依然是十分不幸的。
+						<br><br>
+						<b>建议解决方案：</b>我们暂时无法想出简单明了的解决手段。朝着正确方向迈出的第一步是取消列出（或移除）符合以下描述的大厅：a) 配置错误且玩家不可能加入的，或 b) 运行着已过期的自定义游戏版本且无法加入的。还有一种可能的解决方案，那就是让游戏协调人员定期检查开放大厅的合规性，甚至强制关闭无法加入的大厅或取消其列出。
+					</div>
+					<div class="SmallIssue">
+						<h3>没有禁止玩家加入自建大厅的选项</h3><b>困难：</b>在自定义游戏社区中，存在着一群不太多见，但却十分敬业而有毒的“演员”。这群玩家会持续不断地加入自定义游戏——有时一连持续数年，仅仅是为了破坏其他玩家的游戏体验。房主没有任何办法来禁止此类玩家加入其大厅，所以每次都必须手动踢出他们（不过前面也提到了，目前还有立即重新加入的问题）。
+						<br><br>
+						<img src="/fixthelobbies/images/issue_ban_user.png">
+						<br><br>
+						<b>建议解决方案：</b>允许玩家拥有个人封禁列表，这样在创建大厅时，其封禁列表上的玩家将无法加入大厅。为了便于使用，可将 Steam Block 作为游戏内的封禁列表，只需在房主于大厅中右键点击某位玩家后添加一个“封禁”选项即可。
+					</div>
+					<div class="SmallIssue">
+						<h3>组对玩家可能会导致超出自定义游戏玩家数限制</h3>
+						<b>困难：</b>有可能会有超过自定义游戏玩家数上限的玩家同时游玩。例如：两名组队玩家可以在一个最多支持 1 名玩家的自定义游戏中点击游玩按钮，他们也能开始游戏。这样其实就偏离了游戏的本质，最好是能够消除此类可能性。
+						<br><br>
+						<b>建议解决方案：</b>修复允许各方超出最大玩家数限制游玩的漏洞。
+					</div>
+					<div class="SmallIssue">
+						<h3>开发人员无法获得服务器崩溃日志</h3>
+						<b>困难：</b>开发人员无法获取服务器日志，尤其是崩溃日志。Valve 肯定是有这些日志的，而且这些日志能够帮助开发人员进行调试与开发工作，不过我们也不知道为什么不向开发人员开放访问或查看权限。
+						<br><br>
+						<img src="/fixthelobbies/images/issue_crash_logs.png">
+						<br><br>
+						<b>建议解决方案：</b>添加一个选项来查看/下载最近 10 个专用服务器日志。该选项可添加至工坊管理应用程序中。
+					</div>
+				</div>
+				<div class="Placeholder noSelect">...</div>
+			</div>
+		</div>
+		<div class="Container ContactsContainer">
+			<div class="Inner">
+				<h3>你能做的事</h3>
+				<p>告诉 Valve，社区与游廊对于你而言非常重要！</p>
+				<div class="Cards">
+					<div class="Card">
+						<a rel="noreferrer" target="_blank" href="mailto:dotacustomgames@valvesoftware.com">
+							<img src="/fixthelobbies/images/contact_custom_team.png">
+							<h4>向 Dota 2 自定义游戏团队发送消息</h4>
+						</a>
+					</div>
+					<div class="Card">
+						<a rel="noreferrer" target="_blank" href="http://www.valvesoftware.com/email.php?recipient=Dota%202%20Team">
+							<img src="/fixthelobbies/images/contact_dota_team.png">
+							<h4>向 Dota 2 团队发送消息</h4>
+						</a>
+					</div>
+					<div class="Card">
+						<a rel="noreferrer" target="_blank" href="https://dev.dota2.com/forumdisplay.php?f=484">
+							<img src="/fixthelobbies/images/contact_forum.png">
+							<h4>在 Dota 2 开发者论坛中创建话题</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+</body></html>
