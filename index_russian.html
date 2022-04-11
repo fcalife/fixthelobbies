@@ -69,104 +69,104 @@
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #1: 30 game requirement to use the Arcade</h2>
+				<h2>ПРОБЛЕМА #1: ТРЕБОВАНИЕ 30 ИГР ДЛЯ ИСПОЛЬЗОВАНИЯ ИГРОТЕКИ</h2>
 				<div>
 					<img src="/fixthelobbies/images/issue_30_games.png">
 				</div>
-				<p style="font-family:Radiance"><b>Problem:</b> Players can no longer download Dota 2 just to play games on the Arcade; instead, they are now forced to play 30 games of Dota 2, even if their original interest was in playing Autochess or some other custom game. This has severely handicapped the Arcade's ability to bring new players into the Dota 2 ecosystem, since many of them will simply see the restriction and leave. This was a band-aid solution to deal with bots, and was never replaced with a better, permanent one.<br><br><b>Suggested solution:</b> Make the 30 game requirement opt-in instead of mandatory, on a custom game basis, by making it an option in the game’s addon settings (addoninfo.txt file). That way, games which are not under bot attack can be enjoyed by new players, and those which are can enable the 30-game bot protection as needed.</p>
+				<p style="font-family:Radiance"><b>Проблема:</b> Игроки больше не могут загрузить Dota 2, чтобы просто поиграть игры в Игротеке ; вместо этого они теперь вынуждены играть в 30 игр Dota 2, даже если их первоначальный интерес заключался в игре в Autochess или другой пользовательской/кастомной игре. Это сильно ограничило возможности игротеки по привлечению новых игроков в развитие пользовательских игр Dota 2, так как многие из них просто увидят ограничение и уйдут. Это было пластырное решение для борьбы с ботами, и оно так и не было заменено на лучшее, постоянное.<br><br><b>Предлагаемое решение:</b> Сделать требование о 30 играх не обязательным, а опциональным, на основе индивидуальной/конкретной игры, сделав его опцией в настройках аддона игры (файл addoninfo.txt). Таким образом, игры, которые не подвергаются атакам ботов, могут быть доступны новым игрокам, а те, которые подвергаются, могут включать защиту от ботов на 30 игр по мере необходимости.</p>
 			</div>
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #2: hour-long ban for failing to ready up for a custom game</h2>
+				<h2>ПРОБЛЕМА #2: ЧАСОВОЙ БАН ЗА НЕ ПРИНЯТУЮ ИГРУ</h2>
 				<div>
 					<img src="/fixthelobbies/images/issue_hour_ban.png">
 				</div>
-				<p style="font-family:Radiance"><b>Problem:</b> A 1 hour ban is given when a player fails to click accept on any custom game lobby. This is too severe a penalty for real players, and causes constant issues due to simple human error.<br><br>To compound this issue, the penalty is applied <i>even on 1-player lobbies.</i> It is also exploitable if the lobby’s host is a griefer, since they can start the lobby early (before the proper amount of players for the game is reached), giving players the choice of either taking an 1 hour penalty for something out of their control, or wasting the sometimes several minutes they spent finding their current lobby so far.<br><br><b>Suggested solution:</b> Do not punish players for not clicking the accept button if:<br>a) It is a single player lobby,<br>b) The lobby does not have full players, or<br>c) The entire lobby is filled by a single party.<br><br>Also, scale the punishment: start with a 5 minute penalty, then increase it to 10 minutes, 30, 60, etc. The Arcade ban should also not affect regular Dota: failing to load a custom game should NOT ban you from matchmaking or from playing with bots, for example.</p>
+				<p style="font-family:Radiance"><b>Проблема:</b> Проблема: бан на 1 час выдается, если игрок не нажимает кнопку "принять" в любом пользовательском игровом лобби. Это слишком суровое наказание для реальных игроков, и вызывает постоянные проблемы из-за простой человеческой ошибки.<br><br>Усугубляет проблему то, что наказание применяется даже к лобби, рассчитанным из <i>1 игрока</i>. Это также можно использовать, если хозяин лобби - грифер, так как он может начать лобби раньше времени (до того, как будет достигнуто необходимое количество игроков для игры), предоставляя игрокам выбор: либо получить штраф в 1 час за то, что не зависит от них, либо потратить впустую иногда несколько минут, которые они потратили на поиск текущего лобби.<br><br><b>Предлагаемое решение:</b> Не наказывать игроков за то, что они не нажимают кнопку "Принять", если::<br>a) Это лобби для одного игрока,<br>b) b) В лобби нет полных игроков, или<br>c) c) Все лобби заполнено одним игроком.<br><br>Кроме того, измените масштаб наказания: начните с 5 минут, затем увеличьте до 10 минут, 30, 60 и т.д. Запрет на игротеку также не должен влиять на обычную игру в Доту: если вы не загрузитесь в пользовательскую игру,например вы НЕ должны быть лишены права участвовать в матчмейкинге или играть с ботами.</p>
 			</div>
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #3: penalty-enabled custom games apply a 1-hour ban for no reason</h2>
+				<h2>ПРОБЛЕМА #3: ПОЛЬЗОВАТЕЛЬСКИЕ ИГРЫ С ФУНКЦИЕЙ ШТРАФА НАКЛАДЫВАЮТ БАН НА 1 ЧАС БЕЗ ПРИЧИНЫ</h2>
 				<div>
 					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_auto_ban_preview.jpg">
 						<source type="video/mp4" src="/fixthelobbies/images/issue_auto_ban.mp4">
 					</video>
 				</div>
-				<p style="font-family:Radiance"><b>Problem:</b> This is a recent problem, only having been noticed this last week. Upon starting a match in any custom game with leaver penalties enabled, all players' abandon timers will start counting down, and, after 5 minutes, they will all receive an abandon (and 1 hour ban from the Arcade). Players have discovered that manually disconnecting/reconnecting during that period is a valid workaround for the issue, and stops the abandon timer.<br><br><b>Suggested solution:</b> This was a recently introduced bug, so, hopefully it will not be a challenge to isolate and fix it, or revert its relevant update. We speculate, based on the given workaround, that there is a problem with detecting or validating players' connection status at the start of a game, but this is only a guess; Valve is better positioned to diagnose and fix this issue.</p>
+				<p style="font-family:Radiance"><b>Проблема:</b> Эта проблема возникла недавно, только на прошлой неделе. После начала матча в любой пользовательской игре с включенными штрафами за покидание игры, таймеры покинутых игроков начинают обратный отсчет, и через 5 минут все они получают  ( бан на 1 час в Игротеке). Игроки обнаружили, что ручное отключение/переподключение в этот период является действенным обходным решением проблемы и останавливает таймер отключения.<br><br><b>Предлагаемое решение:</b> Это недавно появившаяся ошибка, поэтому, надеемся, не составит труда ее обнаружить и исправить или вернуть соответствующее обновление. Мы предполагаем, основываясь на предложенном решении, что существует проблема с определением или проверкой статуса подключения игроков в начале игры, но это всего лишь предположение; Valve имеет больше возможностей для диагностики и устранения этой проблемы.</p>
 			</div>
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #4: kicked players can rejoin lobbies instantly</h2>
+				<h2>ПРОБЛЕМА #4: ВЫГНАННЫЕ/КИКНУТЫЕ ИГРОКИ МОГУТ МГНОВЕННО ВЕРНУТЬСЯ В ЛОББИ</h2>
 				<div>
 					<video autoplay muted loop preload="auto" poster="/fixthelobbies/images/issue_instant_rejoin_preview.jpg">
 						<source type="video/mp4" src="/fixthelobbies/images/issue_instant_rejoin.mp4">
 					</video>
 				</div>
-				<p style="font-family:Radiance"><b>Problem:</b> Players who are kicked from lobbies can instantly rejoin them. This is exploited by bots and griefers to rejoin faster than anyone can kick them out.<br><br><b>Suggested solution:</b> Make it so players cannot rejoin a lobby they have been kicked from either for the duration of the lobby, or for 5 minutes. Also, to avoid bots quickly joining and leaving a lobby in order to avoid being kicked from it, add a small cooldown (5 seconds would be enough) to a player’s ability to enter or leave a lobby (i.e. can’t rejoin if you just left).</p>
+				<p style="font-family:Radiance"><b>Проблема:</b> Игроки, которых выгнали из лобби, могут мгновенно вернуться в него. Этим пользуются боты и гриферы, чтобы снова вступить в игру быстрее, чем кто-то успеет их выгнать.<br><br><b>Предлагаемое решение:</b> Сделать так, чтобы игроки не могли вернуться в лобби, из которого их выгнали, ни на время существования лобби, ни на 5 минут. Также, чтобы избежать ботов, быстро присоединяющихся к лобби и покидающих его, чтобы избежать выкидывания из него, добавьте небольшое время задержки (5 секунд будет достаточно) для возможности игрока войти или выйти из лобби (т.е. нельзя снова войти, если вы только что вышли).</p>
 			</div>
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #5: games auto-start when the last player joins</h2>
+				<h2>ПРОБЛЕМА #5: ИГРЫ АВТОМАТИЧЕСКИ ЗАПУСКАЮТСЯ, КОГДА ПРИСОЕДИНЯЕТСЯ ПОСЛЕДНИЙ ИГРОК</h2>
 				<div>
 					<img src="/fixthelobbies/images/issue_auto_start.png">
 				</div>
-				<p style="font-family:Radiance"><b>Problem:</b> Griefers will join lobbies when they are missing a single player, causing the game to auto-start. This causes the other players to be trapped with the griefer, since they cannot decline (as that would only grant them a 1-hour arcade ban). Bots are especially effective at this type of griefing, for obvious reasons.<br><br><b>Suggested solution:</b> Add a 5s countdown to game start so that hosts will have a chance to kick griefers trying to sneak in. Players should be able to leave the lobby during this countdown, but if they do, this should incur a cooldown (at least 1 minute) on their ability to join the same lobby. If that happens, the lobby should stop the countdown and go back to its previous state (waiting for players).</p>
+				<p style="font-family:Radiance"><b>Проблема:</b> Гриферы присоединяются к лобби, когда в нем не хватает одного игрока, что приводит к автозапуску игры. В результате другие игроки оказываются в ловушке вместе с грифером, поскольку они не могут отказаться (так как за это они получат только 1-часовой бан в ИГРОТЕКЕ. Боты особенно эффективны в этом виде грифинга по очевидным причинам.<br><br><b>Предлагаемое решение:</b> Добавить обратный отсчет 5 с до начала игры, чтобы у хостов/лидеров лобби был шанс выгнать нарушителей, пытающихся войти в лобби. Игроки должны иметь возможность покинуть лобби во время этого отсчета, но если они это сделают, это должно повлечь за собой временную задержку (не менее 1 минуты) на их возможность присоединиться к тому же лобби. Если это произойдет, лобби должно остановить обратный отсчет и вернуться в прежнее состояние (ожидание игроков).</p>
 			</div>
 		</div>
 		<div class="Container ComplainContainer">
 			<div class="Inner">
-				<h2>ISSUE #6: updating custom games is a struggle</h2>
+				<h2>ПРОБЛЕМА #6: ОБНОВЛЕНИЕ ПОЛЬЗОВАТЕЛЬСКИХ ИГР ЯВЛЯЕТСЯ СЛОЖНОЙ ЗАДАЧЕЙ</h2>
 				<div>
 					<img src="/fixthelobbies/images/issue_updating.png">
 				</div>
-				<p style="font-family:Radiance"><b>Problem:</b> When a custom game is updated, it becomes impossible to play for about half an hour (or more), as some players will see (and be able to download) the new version, while others won't.<br><br>Lobbies with the old version will stay open for hours, without being able to start, trapping players inside them and sometimes triggering the dreaded hour-long ban (malicious bots also abuse this by sometimes leaving those outdated lobbies open for months). Players frantically uninstall and reinstall the game tens of times, confused and angry at their inability to play and undeserved bans.<br><br><b>Suggested solution:</b> Let players know immediately that their downloaded version is different from the most up-to-date one. Close all open lobbies immediately when a custom game is updated, and only allow new lobbies to be created by players with the newest version. When players attempt to join or create a lobby, the game should check their local version, update it if necessary, and only after that allow said joining/creation.</p>
+				<p style="font-family:Radiance"><b>Проблема:</b> Когда пользовательская игра обновляется, в течение получаса (или более) становится невозможно играть, поскольку одни игроки видят (и могут загрузить) новую версию, а другие - нет.<br><br>Лобби со старой версией остаются открытыми часами, не имея возможности начать игру, задерживая игроков в них и иногда вызывая часовой бан (вредоносные боты также злоупотребляют этим, иногда оставляя эти устаревшие лобби открытыми месяцами). Игроки десятками раз удаляют и переустанавливают игру, недоумевая и злясь на свою неспособность играть и за незаслуженные баны в виде 1 часа запрет игры (в Игротеке)<br><br><b>Предлагаемое решение:</b> Сразу же сообщать игрокам, что загруженная ими версия отличается от самой последней. Закрывать все открытые лобби сразу после обновления пользовательской игры и разрешать создавать новые лобби только игрокам с самой новой версией. Когда игроки пытаются присоединиться или создать лобби, игра должна проверить их локальную версию, обновить ее, если необходимо, и только после этого разрешить присоединится/создать.</p>
 			</div>
 		</div>
 		<div class="Container ComplainContainer">
 			<div id="OtherIssuesTitle" class="Inner">
 				<h2 onclick="ExpandOtherIssues();">
-					Other issues (in order of importance)
+					ДРУГИЕ ВОПРОСЫ (В ПОРЯДКЕ ВАЖНОСТИ)
 					<img src="images/arrow.svg" class="noSelect">
 				</h2>
 				<div id="OtherIssuesBody">
 					<div class="SmallIssue">
-						<h3>It's possible to create malicious lobbies with improper settings</h3>
-						<b>Problem:</b> Users are able to create lobbies with impossible settings for the given custom game. For example creating a 24 player lobby for a custom game that is maximum 10 players. Some people do this for malicious reasons, to act as a ‘trap’ lobby that players will be automatically placed into when they press the ‘Play’ button, until the lobby eventually fills up to 24 players in which the lobby will attempt to launch but fail because the custom game cannot support that amount of players. It's also possible to create lobbies with -1 max players (in attempt to increase lobby count of custom game), its possible to create public lobbies with sv_cheats 1 enabled (for hackers to abuse), it's also possible to create lobbies with penalties enabled, even if the custom game does not have penalties enabled. This is also used to create lobbies that will never fill and hence inflate the “Open Lobby” count for custom games.
+						<h3>Возможно создание вредоносных лобби с неправильными настройками</h3>
+						<b>Проблема:</b> Пользователи могут создавать лобби с невозможными настройками для данной пользовательской игры. Например, создать лобби на 24 и более игрока для пользовательской игры, в которой максимум 10 игроков. Некоторые люди делают это по злому умыслу, чтобы сделать лобби "ловушкой", в которую игроки будут автоматически попадать при нажатии кнопки "Играть", пока лобби не заполнится до 24 игроков, после чего лобби попытается запуститься, но не сможет, потому что пользовательская игра не может поддерживать такое количество игроков. Также можно создавать лобби с минимальным количеством игроков в -1 (в попытке увеличить количество игроков в лобби пользовательской игры), можно создавать публичные лобби с включенным sv_cheats 1 (для злоупотребления хакерами), можно создавать лобби с включенными штрафами, даже если в пользовательской игре штрафы не включены. Это также используется для создания лобби, которые никогда не заполняются и, следовательно, увеличивают количество "открытых лобби" для пользовательских игр.
 						<br><br>
 						<img src="images/issue_malicious_lobbies.png">
 						<br><br>
-						<b>Suggested solution:</b> Do not allow lobbies to have settings that don’t make sense. Verify lobbies settings with what is acceptable for that custom game, and either deny lobby creation of lobbies with incorrect settings, or do not list lobbies which have incorrect settings so players cannot accidentally join them.
+						<b>Предлагаемое решение:</b> Не разрешать лобби иметь настройки, которые не имеют определенного значения. Проверяйте настройки лобби на соответствие допустимым для данной пользовательской игры, и либо запрещайте создание лобби с неправильными настройками, либо не указывайте лобби с неправильными настройками, чтобы игроки не могли случайно присоединиться к ним.
 					</div>
 					<div class="SmallIssue">
-						<h3>Botted and Fake lobbies intended to artificially inflate a custom game’s position in list of custom games</h3>
-						<b>Problem:</b> Certain custom game developers have resorted to creating fake lobbies to artificially boost their custom game position in the list of custom games (Because custom games are ranked by the amount of open lobbies). It is common practice, and currently the top 6 custom games in the list, all have artificial lobbies to varying degrees. While the open lobby ranking is preferable to the old static top 10 list of custom games, this abuse is unfortunate. 
+						<h3>Ботоводство и фальшивые лобби, предназначенные для искусственного повышения позиции пользовательской игры в списке пользовательских игр</h3>
+						<b>Проблема:</b> Некоторые разработчики пользовательских игр прибегают к созданию фальшивых лобби, чтобы искусственно повысить позицию своей пользовательской игры в списке пользовательских игр(в Игротеке) (поскольку пользовательские игры упорядочены по количеству открытых лобби). Это обычная практика, и в настоящее время 6 лучших пользовательских игр в списке имеют искусственные лобби в той или иной степени. Хотя рейтинг открытых лобби предпочтительнее старого статичного списка 10 лучших пользовательских игр, такое злоупотребление вызывает сожаление. 
 						<br><br>
-						<b>Suggested solution:</b> We could think of no clear and easy way to fix this problem. One step in the right direction is to delist lobbies (or remove) that have a) Incorrect configurations so that its impossible for people to join or b) Are running outdated versions of the custom game so it's also impossible to join. A solution would be for the game coordinator to periodically check the legitimacy of open lobbies, and even forcefully shut down ones that are unable to be joined, or delist them.
+						<b>Предлагаемое решение:</b> Мы не смогли придумать четкого и простого способа решения этой проблемы. Одним из шагов в правильном направлении является исключение из списка (или удаление) лобби, которые а) имеют неправильную конфигурацию, так что к ним невозможно присоединиться, или б) работают на устаревших версиях пользовательской игры, так что к ним также невозможно присоединиться. Решением может быть периодическая проверка игровым координатором сети открытых лобби и даже принудительное закрытие тех, к которым невозможно присоединиться, или их исключение из списка.
 					</div>
 					<div class="SmallIssue">
-						<h3>No option to ban players from your lobby</h3>
-						<b>Problem:</b> Some rare, but extremely toxic and dedicated actors exist in the community - players that will continually join custom games, in some cases for years, with the sole intent of trolling and griefing the game. Hosts have no way to ban these players from their lobbies, so they have to kick them each time they host (and remember, they are currently free to immediately rejoin).
+						<h3>Нет возможности запретить игрокам посещать ваше лобби</h3>
+						<b>Проблема:</b> В сообществе существуют редкие, но чрезвычайно токсичные и преданные игроки - игроки, которые постоянно присоединяются к пользовательским играм, в некоторых случаях годами, с единственной целью - троллить и досаждать в игре. У хостеров нет возможности запретить таким игрокам появляться в лобби, поэтому им приходится выгонять их каждый раз, когда они хостят (и помните, что в настоящее время они могут немедленно присоединиться снова).
 						<br><br>
 						<img src="images/issue_ban_user.png">
 						<br><br>
-						<b>Suggested solution:</b> Allow players to have a personal banlist, so that when they host a lobby, players on their banlist cannot join the lobby. For ease of use the Steam block use can double up as the ingame banlist, with adding of a “Ban” option when hosts right click on a player in their lobby.
+						<b>Предлагаемое решение:</b> Разрешить игрокам иметь личный бан-лист, чтобы при проведении лобби игроки из их бан-листа не могли присоединиться к лобби. Для простоты использования блок Steam можно удвоить как внутриигровой банлист, добавив опцию "Запретить" при нажатии правой кнопкой мыши на игроке в лобби.
 					</div>
 					<div class="SmallIssue">
-						<h3>Players in parties can exceed max players of custom game</h3>
-						<b>Problem:</b> It's possible for parties of players to play a custom game beyond its maximum players. E.g. a two player party can click the “Play” button on a custom game that is only max 1 player, they will be able to join the game, the game will not work like this but it would be better if this was not possible. 
+						<h3>Игроки в лобби могут превышать максимальное количество игроков в пользовательской игре</h3>
+						<b>Проблема:</b> Возможно, что в пользовательскую игру могут играть не только максимальное количество игроков. Например, группа из двух игроков может нажать кнопку "Играть" в пользовательской игре, в которой максимум 1 игрок, и они смогут присоединиться к игре, игра не будет работать таким образом, но было бы лучше, если бы это было невозможно. 
 						<br><br>
-						<b>Suggested solution:</b> Fix the exploit that allows parties to exceed custom game max players. 
+						<b>Предлагаемое решение:</b> Исправьте ошибку, которая позволяет игрокам превышать максимальное количество игроков в пользовательской игре 
 					</div>
 					<div class="SmallIssue">
-						<h3>Developers do not have access to server crash logs</h3>
-						<b>Problem:</b> Server logs, especially crash logs are not available to developers. Valve must have them, so it's a shame we cannot access or view them, as it would greatly help with debugging and development.
+						<h3>Разработчики не имеют доступа к журналам сбоев сервера</h3>
+						<b>Проблема:</b> Журналы сервера, особенно журналы сбоев, недоступны для разработчиков. У Valve они должны быть, поэтому очень жаль, что мы не можем получить к ним доступ или просмотреть их, так как это очень помогло бы в отладке и разработке.
 						<br><br>
 						<img src="images/issue_crash_logs.png">
 						<br><br>
-						<b>Suggested solution:</b> Add an option to view/download the last 10 dedicated server logs. This option could be added to the “Workshop Manager” application.
+						<b>Предлагаемое решение:</b> Добавить возможность просмотра/загрузки последних 10 журналов выделенного сервера. Эта опция может быть добавлена в приложение "Workshop Manager".
 					</div>
 				</div>
 				<div class="Placeholder noSelect">
